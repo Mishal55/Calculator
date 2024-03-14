@@ -1,12 +1,25 @@
-//BMI CALCULATOR USING INQUIRER PROMPT
-import inquirer from "inquirer";
-const questions = [
-    { type: "number", name: "weight", message: "weight(kg):" },
-    { type: "number", name: "height", message: "heght(e):" },
-];
-const calculateBMI = (weight: number, height: number) => weight / (height + height);
-const main = async () => {
-    const { weight, height } = await inquirer.prompt(questions);
-    console.log(`BMI:${calculateBMI(weight, height).toFixed(2)}`);
-};
-main();
+//CACULATOR IN USING TYPESCRIPT
+
+var prompt = require("prompt-sync")();
+
+var n1 = parseInt(prompt("Enter you first number:"));
+
+var n2 = parseInt(prompt("Enter your second number:"));
+
+var operator = (prompt("enter operator (+,-,*,/):"));
+if (operator = "+") {
+    console.log(`the answer of ${n1} ${operator} ${n2} = ${n1+n2}`);
+}
+if (operator = "-") {
+    console.log(`the answer of ${n1} ${operator} ${n2} = ${n1-n2}`);
+}
+if (operator = "*") {
+console.log(`the answer of ${n1} ${operator} ${n2} = ${n1*n2}`);
+}
+if (operator = "/") {
+  console.log(`the answer of ${n1} ${operator} ${n2} = ${n1/n2}`);
+
+}else {
+    console.log("please select correct operator ");
+}
+export{};
