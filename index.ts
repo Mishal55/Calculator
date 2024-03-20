@@ -2,7 +2,7 @@
 
 var prompt = require("prompt-sync")();
 
-var n1 = parseInt(prompt("Enter you first number:"));
+var n1 = parseInt(prompt("Enter your first number:"));
 
 var n2 = parseInt(prompt("Enter your second number:"));
 
